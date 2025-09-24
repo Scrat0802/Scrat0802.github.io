@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Projects</h1>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </header>
+        
+        <main class="projects-grid" id="projects-grid">
+            <!-- Project cards will be dynamically generated here -->
+        </main>
+    </div>
+
+    <!-- Comment Modal -->
+    <div id="comment-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Comments</h2>
+                <button class="close-button" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="comments-list" id="comments-list">
+                    <!-- Comments will be dynamically loaded here -->
+                </div>
+                <div class="comment-input-section">
+                    <textarea id="comment-input" placeholder="Add a comment..." rows="3"></textarea>
+                    <button id="add-comment-btn" class="add-comment-btn">Add Comment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
